@@ -6,6 +6,7 @@ function About() {
   return (
     <div id="about">
       <div class="aboutContainer">
+        <div class="gridCards" />
         <div class="flexCards">
           <Card
             title="Bootstrap v3.3.6"
