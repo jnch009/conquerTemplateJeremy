@@ -1,0 +1,94 @@
+.navbar {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
+  text-align: center;
+  /* background-color: #f1f1f1;
+  height: 100%; Full height 
+  position: fixed; Make it stick, even on scroll 
+  overflow: auto; Enable scrolling if the sidenav has too much content */
+}
+
+li {
+  float: left;
+  padding: 10px 10px;
+}
+
+li a {
+  display: inline-block;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  border: 1px solid #bbb;
+}
+
+li a:hover:not(.active) {
+  color: #555;
+  background-color: white;
+}
+
+.active {
+  background-color: #4caf50;
+  color: lightcyan;
+}
+
+@media screen and (max-width: 700px) {
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s linear, opacity 0.2s linear;
+  }
+
+  .hamburgerWrapper {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.25s linear, opacity 0.2s linear;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.25s linear, opacity 0.2s linear;
+  }
+
+  .hamburgerWrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s linear, opacity 0.2s linear;
+  }
+}
+
+.hamburgerList {
+  visibility: visible;
+  opacity: 1;
+  width: 75%;
+  height: 100%;
+}
+
+.hamburgerNavbar {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: flex-start;
+}
+
+.hamburgerListItem {
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}

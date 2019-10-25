@@ -1,0 +1,21 @@
+#homepage {
+  height: 35em;
+  background-image: url(bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.conquerContainer {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+}
+
+h1 {
+  font-size: 4em;
+  padding-top: 2em;
+  margin-block-end: 0;
+}

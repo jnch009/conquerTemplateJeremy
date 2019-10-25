@@ -1,0 +1,46 @@
+.bootstrapCard {
+  width: 28%;
+  padding: 10px 10px;
+  background-color: #f2f2f2;
+}
+
+img {
+  width: 100%;
+}
+
+.bootstrapText {
+  width: 100%;
+  text-align: center;
+}
+
+.bootstrapTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.bootstrapGreen {
+  visibility: visible;
+  width: 50%;
+  color: white;
+  background-color: green;
+  border-radius: 6px;
+}
+
+.seeDetails {
+  visibility: visible;
+  width: 50%;
+  color: white;
+  background-color: blue;
+  border-radius: 6px;
+}
+
+.buttonRed {
+  visibility: visible;
+  width: 50%;
+  color: white;
+  background-color: red;
+  border-radius: 6px;
+}

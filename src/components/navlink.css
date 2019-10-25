@@ -1,0 +1,9 @@
+.hamburgerLink {
+  display: inline-block;
+  padding: 16px 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  width: 100%;
+  border: none;
+}

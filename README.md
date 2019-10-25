@@ -1,2 +1,0 @@
-# conquerTemplateJeremy
-Created with CodeSandbox
