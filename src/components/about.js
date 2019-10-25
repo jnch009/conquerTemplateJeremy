@@ -6,7 +6,13 @@ function About() {
   return (
     <div id="about">
       <div class="aboutContainer">
-        <div class="gridCards" />
+        <div class="gridCards">
+          <div class="num1" />
+          <div class="num2" />
+          <div class="num3" />
+          <div class="num4" />
+          <div class="num5" />
+        </div>
         <div class="flexCards">
           <Card
             title="Bootstrap v3.3.6"
