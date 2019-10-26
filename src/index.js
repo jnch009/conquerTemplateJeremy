@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import Home from "./components/homepage.js";
 import About from "./components/about.js";
@@ -8,15 +8,10 @@ import Hamburger from "./components/hamburger.js";
 import "./styles.css";
 
 function App() {
-  const [ham, setHam] = useState(false);
-  const showHamburger = () => {
-    setHam(!ham);
-  };
-
   return (
     <>
       <Navbar />
-      <Hamburger showMenu={ham} showHamburger={showHamburger} />
+      <Hamburger />
       <Home />
       <About />
     </>

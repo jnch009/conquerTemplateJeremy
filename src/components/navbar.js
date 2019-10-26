@@ -46,6 +46,11 @@ class Navbar extends React.Component {
       }
     ];
 
+    const functionsToCall = [
+      { fn: this.props.click },
+      { fn: this.handleClick }
+    ];
+
     return (
       <ul class={this.props.showNav ? "hamburgerList" : null}>
         <div class={this.props.showNav ? "hamburgerNavbar" : "navbar"}>
@@ -57,7 +62,8 @@ class Navbar extends React.Component {
                     href={e.href}
                     index={e.index}
                     selected={e.selected}
-                    onClick={this.handleClick}
+                    //onClick={functionsToCall}
+                    onClick={this.props.onClick}
                     class="hamburgerLink"
                   />
                 </li>
