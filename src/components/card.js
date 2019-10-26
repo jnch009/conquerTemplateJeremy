@@ -18,8 +18,10 @@ class Card extends React.Component {
       <div>
         <img src={this.state.imgLink} alt="1" />
         <div class="bootstrapText">
-          <p class="bootstrapTitle">{this.state.title}</p>
-          <p class="bootstrapBody">{this.state.body}</p>
+          <div class="cardContents">
+            <p class="bootstrapTitle">{this.state.title}</p>
+            <p class="bootstrapBody">{this.state.body}</p>
+          </div>
           <button class={this.state.buttonClass}>
             {this.state.buttonText}
           </button>

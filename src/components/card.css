@@ -18,6 +18,7 @@ img {
   color: green;
   padding: 0 20px;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .bootstrapGreen {
@@ -42,4 +43,15 @@ img {
   color: white;
   background-color: red;
   border-radius: 6px;
+}
+
+.cardContents {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.bootstrapBody {
+  padding: 0 20px;
+  text-align: left;
+  margin-top: 0;
 }
