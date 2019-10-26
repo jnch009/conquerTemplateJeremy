@@ -15,7 +15,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div class="bootstrapCard">
+      <div>
         <img src={this.state.imgLink} alt="1" />
         <div class="bootstrapText">
           <p class="bootstrapTitle">{this.state.title}</p>
