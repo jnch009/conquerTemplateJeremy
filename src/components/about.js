@@ -5,7 +5,7 @@ import Card from "./card.js";
 function About() {
   return (
     <div id="about">
-      <div class="aboutContainer">
+      <div class="flexCards">
         <div class="gridCards">
           <div class="num1">
             <Card
@@ -68,7 +68,6 @@ function About() {
             />
           </div>
         </div>
-        <div class="flexCards" />
       </div>
     </div>
   );
