@@ -15,7 +15,7 @@ function About() {
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
               buttonText="Button Green"
-              imgLink="1-1.jpg"
+              imgLink="2-1.jpg"
               buttonClass="bootstrapGreen"
             />
           </div>
@@ -63,7 +63,7 @@ function About() {
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
               buttonText="Button Green"
-              imgLink="1-1.jpg"
+              imgLink="2-2.jpg"
               buttonClass="bootstrapGreen"
             />
           </div>
