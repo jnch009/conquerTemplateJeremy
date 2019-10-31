@@ -59,11 +59,9 @@ function About() {
           </div>
           <div class="num5">
             <Card
-              title="Bootstrap v3.3.6"
-              body="Morbi sagittis justo a velit placerat ullamcorper quis quis
-            velit. Sed convallis at risus ullamcorper auctor. Praesent quis
-            velit neque. Quisque semper porta nisi vitae suscipit. Duis
-            lectus magna, ornare ac scelerisque."
+              title="Two Column Right Side"
+              body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium.
+              Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus."
               buttonText="Button Green"
               imgLink="2-2.jpg"
               buttonClass="bootstrapGreen"
