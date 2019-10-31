@@ -9,12 +9,18 @@ img {
   padding-bottom: 30px;
 }
 
+.titleTopRow {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 20px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
 .bootstrapTitle {
   font-size: 20px;
   font-weight: 700;
-  /*color: green;*/
   padding: 0 20px;
-  /* text-align: left; */
   margin-bottom: 0;
 }
 

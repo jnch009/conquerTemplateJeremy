@@ -10,6 +10,7 @@ function About() {
           <div class="num1">
             <Card
               title="Bootstrap v3.3.6"
+              titleStyle="titleTopRow"
               body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -23,6 +24,7 @@ function About() {
           <div class="num2">
             <Card
               title="Responsive Design"
+              titleStyle="titleTopRow"
               body="Conquer Template is provided by templatemo for free of charge.
             You can use this template for any kind of website. No credit
             link is required. All images by Unsplash. Thank you for visiting
@@ -36,6 +38,7 @@ function About() {
           <div class="num3">
             <Card
               title="Parallax Layout"
+              titleStyle="titleTopRow"
               body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis

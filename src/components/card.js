@@ -6,6 +6,9 @@ class Card extends React.Component {
     super(props);
     this.state = {
       title: this.props.title,
+      titleStyle: this.props.titleStyle
+        ? this.props.titleStyle
+        : "bootstrapTitle",
       body: this.props.body,
       buttonText: this.props.buttonText,
       imgLink: this.props.imgLink,
@@ -20,7 +23,10 @@ class Card extends React.Component {
         <img src={this.state.imgLink} alt="1" />
         <div class="bootstrapText">
           <div class="cardContents">
-            <p class="bootstrapTitle" style={{ color: this.props.cardColor }}>
+            <p
+              class={this.state.titleStyle}
+              style={{ color: this.props.cardColor }}
+            >
               {this.state.title}
             </p>
             <p class="bootstrapBody">{this.state.body}</p>
