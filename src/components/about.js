@@ -16,7 +16,7 @@ function About() {
             lectus magna, ornare ac scelerisque."
               buttonText="Button Green"
               imgLink="1-1.jpg"
-              buttonClass="bootstrapGreen"
+              buttonClass="topRowButtons"
               cardColor="green"
             />
           </div>
@@ -29,7 +29,7 @@ function About() {
             our website. Please come again!"
               buttonText="See Details"
               imgLink="1-2.jpg"
-              buttonClass="seeDetails"
+              buttonClass="topRowButtons"
               cardColor="blue"
             />
           </div>
@@ -42,7 +42,7 @@ function About() {
             lectus magna, ornare ac scelerisque."
               buttonText="Button Red"
               imgLink="1-3.jpg"
-              buttonClass="buttonRed"
+              buttonClass="topRowButtons"
               cardColor="red"
             />
           </div>

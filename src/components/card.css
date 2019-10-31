@@ -18,27 +18,10 @@ img {
   margin-bottom: 0;
 }
 
-.bootstrapGreen {
+.topRowButtons {
   visibility: visible;
-  width: 50%;
+  width: 150px;
   color: white;
-  background-color: green;
-  border-radius: 6px;
-}
-
-.seeDetails {
-  visibility: visible;
-  width: 50%;
-  color: white;
-  background-color: blue;
-  border-radius: 6px;
-}
-
-.buttonRed {
-  visibility: visible;
-  width: 50%;
-  color: white;
-  background-color: red;
   border-radius: 6px;
 }
 
