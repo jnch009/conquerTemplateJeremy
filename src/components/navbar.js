@@ -21,7 +21,7 @@ class Navbar extends React.Component {
         selected: this.state.active === 0
       },
       {
-        title: "About us",
+        title: "About Us",
         href: "#about",
         index: 1,
         selected: this.state.active === 1
