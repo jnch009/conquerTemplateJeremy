@@ -1,6 +1,17 @@
+.parallaxWrapper {
+  height: 1000px;
+}
+
 .parallax {
 }
 
-.parallax--bg {
+.parallax--bg::after {
   background-image: url("bg-2.jpg");
+}
+
+.parallax__flex {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
 }
