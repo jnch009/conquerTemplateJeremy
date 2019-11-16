@@ -1,5 +1,8 @@
 .parallaxWrapper {
-  /* height: 20vh; */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 }
 
 .parallax {
@@ -10,7 +13,6 @@
 }
 
 .parallax__flex {
-  height: 50vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
