@@ -4,7 +4,7 @@ import "./services.css";
 function Services() {
   return (
     <div id="services">
-      <div class="parallax bg">
+      <div class="parallax parallax--bg ">
         <h1>Our Services</h1>
         <p>
           Nunc diam leo, fringilla vulputate elit lobortis, consectetur
