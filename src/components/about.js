@@ -64,7 +64,7 @@ function About() {
               Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus."
               buttonText="Button Green"
               imgLink="2-2.jpg"
-              buttonClass="bootstrapGreen"
+              buttonClass="topRowButtons"
               cardColor="grey"
             />
           </div>
