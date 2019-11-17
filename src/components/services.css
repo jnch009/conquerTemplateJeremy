@@ -1,5 +1,5 @@
 #services {
-  margin-top: 25vh;
+  padding-top: 25vh;
 }
 
 .parallax {
@@ -30,4 +30,16 @@
 .testParagraph {
   color: #fff;
   font-size: 18px;
+}
+
+.flexServices {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 1000px;
+}
+
+.card--Medium {
+  padding-top: 10vh;
+  width: 500px;
 }
