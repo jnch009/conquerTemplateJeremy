@@ -1,20 +1,24 @@
-.parallaxWrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-}
-
 .parallax {
-}
-
-.parallax--bg {
   background-image: url("bg-2.jpg");
-}
+  height: 200px;
 
-.parallax__flex {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
-  align-content: center;
+}
+
+.testHeader {
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 2px 2px #aaa;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.testParagraph {
+  color: #fff;
+  font-size: 18px;
 }
