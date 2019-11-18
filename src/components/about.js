@@ -65,6 +65,7 @@ function About() {
               buttonText="Button Green"
               imgLink="2-2.jpg"
               buttonClass="topRowButtons"
+              buttonWrapper="cardButton"
               cardColor="grey"
             />
           </div>

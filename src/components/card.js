@@ -13,7 +13,8 @@ class Card extends React.Component {
       buttonText: this.props.buttonText,
       imgLink: this.props.imgLink,
       buttonClass: this.props.buttonClass,
-      buttonColor: this.props.cardColor
+      buttonColor: this.props.cardColor,
+      buttonWrapper: this.props.buttonWrapper
     };
   }
 
@@ -31,12 +32,14 @@ class Card extends React.Component {
             </h2>
             <p class="bootstrapBody">{this.state.body}</p>
           </div>
-          <button
-            class={this.state.buttonClass}
-            style={{ "background-color": this.state.buttonColor }}
-          >
-            {this.state.buttonText}
-          </button>
+          <div class={this.state.buttonWrapper}>
+            <button
+              class={this.state.buttonClass}
+              style={{ "background-color": this.state.buttonColor }}
+            >
+              {this.state.buttonText}
+            </button>
+          </div>
         </div>
       </div>
     );

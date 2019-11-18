@@ -37,6 +37,12 @@ img {
   grid-template-rows: 1fr 3fr;
 }
 
+.cardButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
 .bootstrapBody {
   padding: 0 20px;
   text-align: left;
