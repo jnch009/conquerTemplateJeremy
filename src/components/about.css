@@ -1,8 +1,11 @@
+#about {
+  padding-top: 7vh;
+}
+
 .flexCards {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 20em;
 }
 
 .flexWrapper {
