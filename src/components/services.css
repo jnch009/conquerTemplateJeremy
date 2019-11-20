@@ -30,6 +30,15 @@
 .testParagraph {
   color: #fff;
   font-size: 18px;
+
+  /* note for the future: this css will create defined height and width sized box which has a vertical scroll for the overflowed text
+    color: #fff;
+    font-size: 19px;
+    margin: 0 35px;
+    height: 175px;
+    width: 165px;
+    overflow: hidden auto;
+  */
 }
 
 .flexServices {
