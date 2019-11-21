@@ -1,5 +1,7 @@
 import React from "react";
 import "./card.css";
+import "../styles.scss";
+import { throws } from "assert";
 
 class Card extends React.Component {
   constructor(props) {
@@ -34,8 +36,12 @@ class Card extends React.Component {
           </div>
           <div class={this.state.buttonWrapper}>
             <button
-              class={this.state.buttonClass}
-              style={{ "background-color": this.state.buttonColor }}
+              class={
+                "topRowButtons " +
+                " btn " +
+                " btn__normal " +
+                this.state.buttonColor
+              }
             >
               {this.state.buttonText}
             </button>

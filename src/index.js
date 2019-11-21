@@ -6,7 +6,7 @@ import Navbar from "./components/navbar.js";
 import Hamburger from "./components/hamburger.js";
 import Services from "./components/services.js";
 
-import "./styles.css";
+import "./styles.scss";
 
 function App() {
   return (

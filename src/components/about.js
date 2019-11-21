@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "./about.scss";
 import Card from "./card.js";
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
               buttonText="Button Green"
               imgLink="1-1.jpg"
               buttonClass="topRowButtons"
-              cardColor="green"
+              cardColor="btn--green"
             />
           </div>
           <div class="num2">
@@ -32,7 +32,7 @@ function About() {
               buttonText="See Details"
               imgLink="1-2.jpg"
               buttonClass="topRowButtons"
-              cardColor="blue"
+              cardColor="btn--blue"
             />
           </div>
           <div class="num3">
@@ -46,7 +46,7 @@ function About() {
               buttonText="Button Red"
               imgLink="1-3.jpg"
               buttonClass="topRowButtons"
-              cardColor="red"
+              cardColor="btn--red"
             />
           </div>
           <div class="num4">
@@ -54,7 +54,7 @@ function About() {
               title="Two Column Left Side"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus."
               imgLink="2-1.jpg"
-              cardColor="grey"
+              cardColor="btn--hidden"
             />
           </div>
           <div class="num5">
@@ -66,7 +66,7 @@ function About() {
               imgLink="2-2.jpg"
               buttonClass="topRowButtons"
               buttonWrapper="cardButton"
-              cardColor="grey"
+              cardColor="btn--grey"
             />
           </div>
         </div>
