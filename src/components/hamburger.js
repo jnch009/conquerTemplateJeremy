@@ -18,14 +18,14 @@ class Hamburger extends React.Component {
       <>
         <div
           class="hamburgerWrapper"
-          style={{ display: !this.state.ham ? "block" : "none" }}
-          onClick={this.showHamburger}
+          style={{ display: !this.state.ham ? "flex" : "none" }}
         >
-          <div class="container">
+          <div class="container" onClick={this.showHamburger}>
             <div class="bar1" />
             <div class="bar2" />
             <div class="bar3" />
           </div>
+          <button class="btn">test</button>
         </div>
         <div
           class="hamburgerMenu"

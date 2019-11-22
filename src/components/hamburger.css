@@ -5,6 +5,7 @@ you have to add padding/margin to have it show below*/
   width: 100%;
   position: fixed;
   background-color: black;
+  justify-content: space-between;
 }
 
 .container {
