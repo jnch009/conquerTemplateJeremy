@@ -23,7 +23,7 @@ class Hamburger extends React.Component {
         <div
           class="hamburgerWrapper"
           style={{
-            display: !this.state.ham ? "flex" : "none"
+            display: 1 ? "flex" : "none"
           }}
         >
           <div class="container" onClick={this.showHamburger}>
@@ -31,7 +31,10 @@ class Hamburger extends React.Component {
             <div class="bar2" />
             <div class="bar3" />
           </div>
-          <button class="btn btn__hamburger" onClick={this.hamburgerStyle}>
+          <button
+            class={this.state.ham ? "btn btn--hidden" : "btn btn__hamburger"}
+            onClick={this.hamburgerStyle}
+          >
             {this.state.legacy ? "Legacy" : "New"}
           </button>
         </div>
@@ -42,7 +45,10 @@ class Hamburger extends React.Component {
               : "hamburgerMenu"
           }
         >
-          <Navbar showNav={this.state.ham} onClick={this.showHamburger} />
+          <Navbar
+            showNav={this.state.ham && this.state.legacy}
+            onClick={this.showHamburger}
+          />
         </div>
         <div
           class={
@@ -56,7 +62,12 @@ class Hamburger extends React.Component {
           class={
             !this.state.legacy && this.state.ham ? "box box__visible" : "box"
           }
-        />
+        >
+          <Navbar
+            showNav={this.state.ham && !this.state.legacy}
+            onClick={this.showHamburger}
+          />
+        </div>
       </>
     );
   }

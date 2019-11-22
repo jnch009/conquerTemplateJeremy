@@ -70,6 +70,10 @@ you have to add padding/margin to have it show below*/
     height: 65px;
     padding-top: 10px;
   }
+
+  &--hidden{
+    visibility: hidden;
+  }
 }
 
 .box {
