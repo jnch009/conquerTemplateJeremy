@@ -65,6 +65,7 @@ class Hamburger extends React.Component {
         >
           <Navbar
             showNav={this.state.ham && !this.state.legacy}
+            newHam={!this.state.legacy}
             onClick={this.showHamburger}
           />
         </div>

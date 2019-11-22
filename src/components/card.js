@@ -1,7 +1,6 @@
 import React from "react";
 import "./card.css";
 import "../styles.scss";
-import { throws } from "assert";
 
 class Card extends React.Component {
   constructor(props) {

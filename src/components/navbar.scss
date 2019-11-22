@@ -78,6 +78,14 @@ li a:hover:not(.active) {
   opacity: 1;
   width: 75%;
   height: 100%;
+
+  &__new{
+    opacity: 0.85;
+    width: 50%;
+    height: 57%;
+    margin-top: 0em;
+    margin-left: 1em;
+  }
 }
 
 .hamburgerNavbar {

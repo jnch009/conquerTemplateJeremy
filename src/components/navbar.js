@@ -1,6 +1,6 @@
 import React from "react";
 import Navlink from "./navlink.js";
-import "./navbar.css";
+import "./navbar.scss";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -47,34 +47,46 @@ class Navbar extends React.Component {
     ];
 
     return (
-      <ul class={this.props.showNav ? "hamburgerList" : null}>
-        <div class={this.props.showNav ? "hamburgerNavbar" : "navbar"}>
-          {this.props.showNav
-            ? links.map(e => (
-                <li class="hamburgerListItem" onClick={this.props.onClick}>
-                  <Navlink
-                    title={e.title}
-                    href={e.href}
-                    index={e.index}
-                    selected={e.selected}
-                    onClick={this.handleClick}
-                    class="hamburgerLink"
-                  />
-                </li>
-              ))
-            : links.map(e => (
-                <li>
-                  <Navlink
-                    title={e.title}
-                    href={e.href}
-                    index={e.index}
-                    selected={e.selected}
-                    onClick={this.handleClick}
-                  />
-                </li>
-              ))}
-          }};
-        </div>
+      <ul
+        class={
+          this.props.newHam && this.props.showNav
+            ? "hamburgerList hamburgerList__new"
+            : "null"
+        }
+      >
+        <ul
+          class={
+            !this.props.newHam && this.props.showNav ? "hamburgerList" : "null"
+          }
+        >
+          <div class={this.props.showNav ? "hamburgerNavbar" : "navbar"}>
+            {this.props.showNav
+              ? links.map(e => (
+                  <li class="hamburgerListItem" onClick={this.props.onClick}>
+                    <Navlink
+                      title={e.title}
+                      href={e.href}
+                      index={e.index}
+                      selected={e.selected}
+                      onClick={this.handleClick}
+                      class="hamburgerLink"
+                    />
+                  </li>
+                ))
+              : links.map(e => (
+                  <li>
+                    <Navlink
+                      title={e.title}
+                      href={e.href}
+                      index={e.index}
+                      selected={e.selected}
+                      onClick={this.handleClick}
+                    />
+                  </li>
+                ))}
+            }};
+          </div>
+        </ul>
       </ul>
     );
   }
