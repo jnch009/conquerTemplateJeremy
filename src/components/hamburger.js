@@ -22,7 +22,9 @@ class Hamburger extends React.Component {
       <>
         <div
           class="hamburgerWrapper"
-          style={{ display: !this.state.ham ? "flex" : "none" }}
+          style={{
+            display: !this.state.ham ? "flex" : "none"
+          }}
         >
           <div class="container" onClick={this.showHamburger}>
             <div class="bar1" />
@@ -34,15 +36,26 @@ class Hamburger extends React.Component {
           </button>
         </div>
         <div
-          class="hamburgerMenu"
-          style={{ display: this.state.ham ? "block" : "none" }}
+          class={
+            this.state.legacy && this.state.ham
+              ? "hamburgerMenu hamburgerMenu__visible"
+              : "hamburgerMenu"
+          }
         >
           <Navbar showNav={this.state.ham} onClick={this.showHamburger} />
         </div>
         <div
-          class="hamburgerOpen"
-          style={{ display: this.state.ham ? "block" : "none" }}
+          class={
+            this.state.legacy && this.state.ham
+              ? "hamburgerOpen hamburgerOpen__visible"
+              : "hamburgerOpen"
+          }
           onClick={this.showHamburger}
+        />
+        <div
+          class={
+            !this.state.legacy && this.state.ham ? "box box__visible" : "box"
+          }
         />
       </>
     );
