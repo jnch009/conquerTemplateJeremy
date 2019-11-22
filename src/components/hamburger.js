@@ -1,5 +1,5 @@
 import React from "react";
-import "./hamburger.css";
+import "./hamburger.scss";
 import Navbar from "./navbar";
 
 class Hamburger extends React.Component {
@@ -25,7 +25,7 @@ class Hamburger extends React.Component {
             <div class="bar2" />
             <div class="bar3" />
           </div>
-          <button class="btn">test</button>
+          <button class="btn btn__hamburger">test</button>
         </div>
         <div
           class="hamburgerMenu"

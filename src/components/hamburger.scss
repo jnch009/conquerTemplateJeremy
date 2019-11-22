@@ -3,6 +3,7 @@
 you have to add padding/margin to have it show below*/
 .hamburgerWrapper {
   width: 100%;
+  height: 40px;
   position: fixed;
   background-color: black;
   justify-content: space-between;
@@ -51,4 +52,11 @@ you have to add padding/margin to have it show below*/
   background-color: rgba(0, 0, 0, 1);
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+.btn {
+  &__hamburger{
+    height: 40px;
+    padding-top: 10px;
+  }
 }
