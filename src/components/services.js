@@ -22,7 +22,7 @@ function Services() {
 
         <Card
           cardStyle="card__servicesTopRow"
-          title="Bootstrap v3.3.6"
+          title="Column One"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
@@ -30,10 +30,11 @@ function Services() {
             lectus magna, ornare ac scelerisque."
           imgLink="4-1.jpg"
           cardColor="green"
+          buttonWrapper="cardButton--hidden"
         />
         <Card
           cardStyle="card__servicesTopRow"
-          title="Bootstrap v3.3.6"
+          title="Column Two"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
@@ -46,7 +47,7 @@ function Services() {
         />
         <Card
           cardStyle="card__servicesTopRow"
-          title="Bootstrap v3.3.6"
+          title="Column Three"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
@@ -56,10 +57,11 @@ function Services() {
           imgLink="4-3.jpg"
           buttonClass="topRowButtons"
           cardColor="green"
+          buttonWrapper="cardButton--hidden"
         />
         <Card
           cardStyle="card__servicesTopRow"
-          title="Bootstrap v3.3.6"
+          title="Column Four"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
