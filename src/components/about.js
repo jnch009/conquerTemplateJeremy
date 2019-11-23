@@ -12,7 +12,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Bootstrap v3.3.6"
-            titleStyle="title__aboutTopRow title--green"
+            titleStyle="title--alignLeft title--green"
             body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -25,7 +25,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Responsive Design"
-            titleStyle="title__aboutTopRow title--blue"
+            titleStyle="title--alignLeft title--blue"
             body="Conquer Template is provided by templatemo for free of charge.
             You can use this template for any kind of website. No credit
             link is required. All images by Unsplash. Thank you for visiting
@@ -38,7 +38,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Parallax Layout"
-            titleStyle="title__aboutTopRow title--red"
+            titleStyle="title--alignLeft title--red"
             body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -51,7 +51,7 @@ function About() {
           <Card
             cardStyle="card__aboutBottomRow"
             title="Two Column Left Side"
-            titleStyle="title__aboutBottomRow title--grey"
+            titleStyle="title--grey"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium.<br>Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus."
             imgLink="2-1.jpg"
             cardColor="btn--hidden"
@@ -59,7 +59,7 @@ function About() {
           <Card
             cardStyle="card__aboutBottomRow"
             title="Two Column Right Side"
-            titleStyle="title__aboutBottomRow title--grey"
+            titleStyle="title--grey"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium.<br>Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus."
             buttonText="Read More"
             imgLink="2-2.jpg"

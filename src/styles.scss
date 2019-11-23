@@ -130,4 +130,10 @@ h4 {
   &--hidden {
     visibility: hidden;
   }
+
+  &__services--leftjustify{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
 }
