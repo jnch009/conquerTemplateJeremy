@@ -98,17 +98,13 @@ h4 {
 }
 
 .btn {
-  width: 7.5em;
-  padding: 1em;
-  font-size: 16px;
+  padding: 10px 30px;
+  font-size: 18px;
   color: white;
   border-radius: 6px;
+  border: 1px solid #ccc;
   background: transparent;
   transition: background-color 0.3s;
-
-  &__normal {
-    width: 10em;
-  }
 
   &--green {
     background-color: green;
@@ -124,6 +120,11 @@ h4 {
 
   &--grey{
     background-color: grey;
+  }
+
+  &--white{
+    background-color: white;
+    color: #666666;
   }
 
   &--hidden {
