@@ -1,11 +1,11 @@
 import React from "react";
-import "./services.css";
+import "./services.scss";
 import Card from "./card";
 
 function Services() {
   return (
     <div id="services">
-      <div class="parallax">
+      <div class="parallax parallax__servicespage">
         <p class="testHeader">Our Services</p>
         <p class="testParagraph">
           Nunc diam leo, fringilla vulputate elit lobortis, consectetur
