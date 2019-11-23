@@ -8,16 +8,18 @@ import Services from "./components/services.js";
 
 import "./styles.scss";
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Hamburger />
-      <Home />
-      <About />
-      <Services />
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Navbar />
+        <Hamburger />
+        <Home />
+        <About />
+        <Services />
+      </>
+    );
+  }
 }
 
 const rootElement = document.getElementById("root");
