@@ -18,7 +18,10 @@ function Services() {
         </p>
       </div>
       <div class="flexServices">
+        {/* TODO: refactor the following into an array and map */}
+
         <Card
+          cardStyle="card__servicesTopRow"
           title="Bootstrap v3.3.6"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
@@ -29,6 +32,7 @@ function Services() {
           cardColor="green"
         />
         <Card
+          cardStyle="card__servicesTopRow"
           title="Bootstrap v3.3.6"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
@@ -41,6 +45,7 @@ function Services() {
           cardColor="green"
         />
         <Card
+          cardStyle="card__servicesTopRow"
           title="Bootstrap v3.3.6"
           titleStyle="titleTopRow"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
@@ -49,6 +54,19 @@ function Services() {
             lectus magna, ornare ac scelerisque."
           buttonText="Button Green"
           imgLink="4-3.jpg"
+          buttonClass="topRowButtons"
+          cardColor="green"
+        />
+        <Card
+          cardStyle="card__servicesTopRow"
+          title="Bootstrap v3.3.6"
+          titleStyle="titleTopRow"
+          body="Morbi sagittis justo a velit placerat ullamcorper quis quis
+            velit. Sed convallis at risus ullamcorper auctor. Praesent quis
+            velit neque. Quisque semper porta nisi vitae suscipit. Duis
+            lectus magna, ornare ac scelerisque."
+          buttonText="Button Green"
+          imgLink="4-4.jpg"
           buttonClass="topRowButtons"
           cardColor="green"
         />
