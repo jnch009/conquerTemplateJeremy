@@ -31,6 +31,10 @@ img {
       color: #666666;
     }
   }
+
+  &__aboutBottomRow{
+    color: #666666;
+  }
 }
 
 .bootstrapTitle {
@@ -62,6 +66,9 @@ img {
   padding: 0 20px;
   text-align: left;
   margin-top: 0;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #333333;
 }
 
 .card {
