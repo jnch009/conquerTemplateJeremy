@@ -67,8 +67,13 @@ img {
   text-align: left;
   margin-top: 0;
   font-size: 14px;
-  line-height: 1.6em;
+  line-height: 1.2em;
   color: #333333;
+  margin: 10px 0;
+
+  &--lineBreak{
+    margin-top: -25px;
+  }
 }
 
 .card {
