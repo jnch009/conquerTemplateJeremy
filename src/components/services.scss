@@ -49,12 +49,12 @@
 
 .flexServices {
   display: flex;
-  flex-flow: column wrap;
-  align-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 100%;
 }
 
 .card--Medium {
   padding-top: 10vh;
-  width: 500px;
+  width: 200px;
 }

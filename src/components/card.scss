@@ -48,3 +48,16 @@ img {
   text-align: left;
   margin-top: 0;
 }
+
+.card {
+  &__aboutTopRow{
+    width: 300px;
+    padding-right: 25px;
+  }
+
+  &__aboutBottomRow{
+    width: 461px;
+    margin-top: 35px;
+    padding-right: 30px;
+  }
+}

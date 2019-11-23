@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css";
+import "./card.scss";
 import "../styles.scss";
 
 class Card extends React.Component {
@@ -21,7 +21,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class={this.props.cardStyle}>
         <img src={this.state.imgLink} alt="1" />
         <div class="bootstrapText">
           <div class="cardContents">
@@ -34,14 +34,7 @@ class Card extends React.Component {
             <p class="bootstrapBody">{this.state.body}</p>
           </div>
           <div class={this.state.buttonWrapper}>
-            <button
-              class={
-                "topRowButtons " +
-                " btn " +
-                " btn__normal " +
-                this.state.buttonColor
-              }
-            >
+            <button class={" btn " + " btn__normal " + this.state.buttonColor}>
               {this.state.buttonText}
             </button>
           </div>

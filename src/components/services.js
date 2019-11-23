@@ -18,48 +18,40 @@ function Services() {
         </p>
       </div>
       <div class="flexServices">
-        <div class="card--Medium">
-          <Card
-            title="Bootstrap v3.3.6"
-            titleStyle="titleTopRow"
-            body="Morbi sagittis justo a velit placerat ullamcorper quis quis
+        <Card
+          title="Bootstrap v3.3.6"
+          titleStyle="titleTopRow"
+          body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
-            buttonText="Button Green"
-            imgLink="1-1.jpg"
-            buttonClass="topRowButtons"
-            cardColor="green"
-          />
-        </div>
-        <div class="card--Medium">
-          <Card
-            title="Bootstrap v3.3.6"
-            titleStyle="titleTopRow"
-            body="Morbi sagittis justo a velit placerat ullamcorper quis quis
+          imgLink="4-1.jpg"
+          cardColor="green"
+        />
+        <Card
+          title="Bootstrap v3.3.6"
+          titleStyle="titleTopRow"
+          body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
-            buttonText="Button Green"
-            imgLink="1-1.jpg"
-            buttonClass="topRowButtons"
-            cardColor="green"
-          />
-        </div>
-        <div class="card--Medium">
-          <Card
-            title="Bootstrap v3.3.6"
-            titleStyle="titleTopRow"
-            body="Morbi sagittis justo a velit placerat ullamcorper quis quis
+          buttonText="Button Green"
+          imgLink="4-2.jpg"
+          buttonClass="topRowButtons"
+          cardColor="green"
+        />
+        <Card
+          title="Bootstrap v3.3.6"
+          titleStyle="titleTopRow"
+          body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
-            buttonText="Button Green"
-            imgLink="1-1.jpg"
-            buttonClass="topRowButtons"
-            cardColor="green"
-          />
-        </div>
+          buttonText="Button Green"
+          imgLink="4-3.jpg"
+          buttonClass="topRowButtons"
+          cardColor="green"
+        />
       </div>
     </div>
   );
