@@ -18,24 +18,21 @@ class Navbar extends React.Component {
   }
 
   handleScroll = e => {
-    if (
-      e.target.documentElement.scrollTop <
-      e.target.getElementById("homepage").clientHeight
-    ) {
+    let navbarHeight = 73;
+    let windowScroll = e.target.documentElement.scrollTop;
+    let homeHeight = e.target.getElementById("homepage").clientHeight;
+    let aboutHeight = e.target.getElementById("about").clientHeight;
+
+    if (windowScroll + navbarHeight < homeHeight) {
+      // home page selected
       this.setState({ active: 0 });
-    } else if (
-      e.target.documentElement.scrollTop <
-      e.target.getElementById("about").clientHeight
-    ) {
+    } else if (windowScroll - homeHeight + navbarHeight < aboutHeight) {
+      // about page selected
       this.setState({ active: 1 });
     } else {
+      // services selected
       this.setState({ active: 2 });
     }
-    // this.setState({
-    //   active:
-    //     e.target.documentElement.scrollTop <
-    //     e.target.getElementById("homepage").clientHeight
-    // });
   };
 
   handleClick = index => {
