@@ -16,24 +16,24 @@ img {
   padding: 0 20px;
   margin-bottom: 0;
 
-  &__aboutTopRow{
-    text-align: left;
-
-    &--green{
-      color: #178A27;
-    }
-
-    &--blue{
-      color: #1686C1;
-    }
-
-    &--red{
-      color: #666666;
-    }
+  &--green{
+    color: #178A27;
   }
 
-  &__aboutBottomRow{
+  &--blue{
+    color: #1686C1;
+  }
+
+  &--red{
     color: #666666;
+  }
+
+  &--grey{
+    color: #666666;
+  }
+
+  &__aboutTopRow{
+    text-align: left;
   }
 }
 

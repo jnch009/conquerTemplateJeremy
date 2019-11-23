@@ -23,7 +23,7 @@ function Services() {
         <Card
           cardStyle="card__servicesTopRow"
           title="Column One"
-          titleStyle="titleTopRow"
+          titleStyle="title--grey"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -35,7 +35,7 @@ function Services() {
         <Card
           cardStyle="card__servicesTopRow"
           title="Column Two"
-          titleStyle="titleTopRow"
+          titleStyle="title--grey"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -48,7 +48,7 @@ function Services() {
         <Card
           cardStyle="card__servicesTopRow"
           title="Column Three"
-          titleStyle="titleTopRow"
+          titleStyle="title--grey"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -62,7 +62,7 @@ function Services() {
         <Card
           cardStyle="card__servicesTopRow"
           title="Column Four"
-          titleStyle="titleTopRow"
+          titleStyle="title--grey"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -77,7 +77,7 @@ function Services() {
         <Card
           cardStyle="card__servicesBottomRow"
           title="Bootstrap v3.3.6"
-          titleStyle="titleTopRow"
+          titleStyle="title--grey"
           body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
