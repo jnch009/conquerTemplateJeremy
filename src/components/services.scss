@@ -47,10 +47,17 @@
   */
 }
 
-.flexServices {
+.flexServices{
+  margin-top: 50px;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+  &__topSection{
+    flex-flow: row wrap;
+  }
+  &__bottomSection{}
 }
 
+.flexServices > .card__servicesTopRow:not(:last-child){
+  padding-right: 25px;
+}
