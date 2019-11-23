@@ -10,12 +10,27 @@ img {
   margin-top: -5px;
 }
 
-.titleTopRow {
+.title {
   font-size: 20px;
   font-weight: 700;
   padding: 0 20px;
-  text-align: left;
   margin-bottom: 0;
+
+  &__aboutTopRow{
+    text-align: left;
+
+    &--green{
+      color: #178A27;
+    }
+
+    &--blue{
+      color: #1686C1;
+    }
+
+    &--red{
+      color: #666666;
+    }
+  }
 }
 
 .bootstrapTitle {

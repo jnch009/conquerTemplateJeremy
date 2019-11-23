@@ -10,7 +10,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Bootstrap v3.3.6"
-            titleStyle="titleTopRow"
+            titleStyle="title__aboutTopRow title__aboutTopRow--green"
             body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
@@ -23,7 +23,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Responsive Design"
-            titleStyle="titleTopRow"
+            titleStyle="title__aboutTopRow title__aboutTopRow--blue"
             body="Conquer Template is provided by templatemo for free of charge.
             You can use this template for any kind of website. No credit
             link is required. All images by Unsplash. Thank you for visiting
@@ -36,7 +36,7 @@ function About() {
           <Card
             cardStyle="card__aboutTopRow"
             title="Parallax Layout"
-            titleStyle="titleTopRow"
+            titleStyle="title__aboutTopRow title__aboutTopRow--red"
             body="Morbi sagittis justo a velit placerat ullamcorper quis quis
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis

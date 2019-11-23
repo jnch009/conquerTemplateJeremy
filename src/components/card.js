@@ -25,12 +25,7 @@ class Card extends React.Component {
         <img src={this.state.imgLink} alt="1" />
         <div class="bootstrapText">
           <div class="cardContents">
-            <h2
-              class={this.state.titleStyle}
-              style={{ color: this.props.cardColor }}
-            >
-              {this.state.title}
-            </h2>
+            <h2 class={"title " + this.state.titleStyle}>{this.state.title}</h2>
             <p class="bootstrapBody">{this.state.body}</p>
           </div>
           <div class={this.state.buttonWrapper}>
