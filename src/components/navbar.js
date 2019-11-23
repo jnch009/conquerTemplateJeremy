@@ -5,8 +5,38 @@ import "./navbar.scss";
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { active: null };
+    this.state = { active: 0 };
+    this.handleScroll = this.handleScroll.bind(this);
   }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = e => {
+    if (
+      e.target.documentElement.scrollTop <
+      e.target.getElementById("homepage").clientHeight
+    ) {
+      this.setState({ active: 0 });
+    } else if (
+      e.target.documentElement.scrollTop <
+      e.target.getElementById("about").clientHeight
+    ) {
+      this.setState({ active: 1 });
+    } else {
+      this.setState({ active: 2 });
+    }
+    // this.setState({
+    //   active:
+    //     e.target.documentElement.scrollTop <
+    //     e.target.getElementById("homepage").clientHeight
+    // });
+  };
 
   handleClick = index => {
     this.setState({ active: index });
