@@ -32,7 +32,6 @@ class Contact extends React.Component {
     };
 
     this.setState({ tableList: [...this.state.tableList, jsonTableEntry] });
-    console.log(this.state.tableList);
     this.resetState();
   }
 
@@ -40,7 +39,7 @@ class Contact extends React.Component {
     return (
       <div id="contact">
         <div class="contactBody">
-          <h2>Services</h2>
+          <h2>Contact</h2>
           <form class="btn-center" onSubmit={this.handleClick}>
             <input
               type="text"
@@ -63,7 +62,9 @@ class Contact extends React.Component {
               value={this.state.character}
               onChange={this.handleChange}
             />
-            <input type="submit" value="Submit please" class="btn btn--white" />
+            <button type="submit" class="btn btn--white">
+              Submit
+            </button>
           </form>
         </div>
         <div class="flex__container">
@@ -77,12 +78,13 @@ class Contact extends React.Component {
             <span>
               <strong>3</strong>
             </span>
-            <span>
-              <strong>4</strong>
-            </span>
-            <span>
-              <strong>5</strong>
-            </span>
+            {this.state.tableList.map(entry => (
+              <>
+                <span>{entry.name}</span>
+                <span>{entry.address}</span>
+                <span>{entry.character}</span>
+              </>
+            ))}
           </div>
         </div>
       </div>
