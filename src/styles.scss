@@ -137,3 +137,25 @@ h4 {
     padding-left: 20px;
   }
 }
+
+
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__servicespage{
+    background-image: url("bg-2.jpg");
+  }
+
+  &__contactpage{
+    background-image: url("bg-3.jpg");
+  }
+}

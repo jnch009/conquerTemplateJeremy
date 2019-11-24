@@ -38,34 +38,36 @@ class Contact extends React.Component {
   render() {
     return (
       <div id="contact">
-        <div class="contactBody">
-          <h2>Contact</h2>
-          <form class="btn-center" onSubmit={this.handleClick}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={this.state.name}
-              onChange={this.handleChange}
-            />
-            <input
-              type="text"
-              name="address"
-              placeholder="Address"
-              value={this.state.address}
-              onChange={this.handleChange}
-            />
-            <input
-              type="text"
-              name="character"
-              placeholder="Character"
-              value={this.state.character}
-              onChange={this.handleChange}
-            />
-            <button type="submit" class="btn btn--white">
-              Submit
-            </button>
-          </form>
+        <div class="parallax parallax__contactpage">
+          <div class="contactBody">
+            <h2>Contact Form</h2>
+            <form class="btn-center" onSubmit={this.handleClick}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                value={this.state.address}
+                onChange={this.handleChange}
+              />
+              <input
+                type="text"
+                name="character"
+                placeholder="Character"
+                value={this.state.character}
+                onChange={this.handleChange}
+              />
+              <button type="submit" class="btn btn--white">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
         <div class="flex__container">
           <div class="gridTable">
