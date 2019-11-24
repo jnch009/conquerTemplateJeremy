@@ -6,7 +6,7 @@ function Services() {
   return (
     <div id="services">
       <div class="parallax parallax__servicespage">
-        <p class="testHeader">Our Services</p>
+        <p class="testHeader testHeader__services">Our Services</p>
         <p class="testParagraph">
           Nunc diam leo, fringilla vulputate elit lobortis, consectetur
           vestibulum quam. Sed id

@@ -40,7 +40,18 @@ class Contact extends React.Component {
       <div id="contact">
         <div class="parallax parallax__contactpage">
           <div class="contactBody">
-            <h2>Contact Form</h2>
+            <h2 class="testHeader">Contact Form</h2>
+            <div class="contactSubtext">
+              <span>
+                Nunc diam leo, fringilla vulputate elit lobortis, consectetur
+                vestibulum quam. Sed id
+              </span>
+              <span>
+                felis ligula. In euismod libero at magna dapibus, in rutrum
+                velit lacinia.
+              </span>
+              <span>Etiam a mi quis arcu varius condimentum.</span>
+            </div>
             <form class="btn-center" onSubmit={this.handleClick}>
               <input
                 type="text"
