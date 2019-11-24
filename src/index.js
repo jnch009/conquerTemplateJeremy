@@ -5,6 +5,7 @@ import About from "./components/about.js";
 import Navbar from "./components/navbar.js";
 import Hamburger from "./components/hamburger.js";
 import Services from "./components/services.js";
+import Contact from "./components/contact.js";
 
 import "./styles.scss";
 
@@ -17,6 +18,7 @@ class App extends React.Component {
         <Home />
         <About />
         <Services />
+        <Contact />
       </>
     );
   }

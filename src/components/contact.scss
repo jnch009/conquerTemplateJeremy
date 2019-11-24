@@ -1,0 +1,9 @@
+.contactBody{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactBody > h2{
+    text-align: center;
+}
