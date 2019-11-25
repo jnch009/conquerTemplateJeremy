@@ -4,7 +4,7 @@ import "./contact.scss";
 class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", address: "", character: "", tableList: [] };
+    this.state = { name: "", email: "", character: "", tableList: [] };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
 
@@ -13,7 +13,7 @@ class Contact extends React.Component {
 
   resetState() {
     this.setState({ name: "" });
-    this.setState({ address: "" });
+    this.setState({ email: "" });
     this.setState({ character: "" });
   }
 
@@ -27,7 +27,7 @@ class Contact extends React.Component {
     e.preventDefault();
     const jsonTableEntry = {
       name: this.state.name,
-      address: this.state.address,
+      email: this.state.email,
       character: this.state.character
     };
 
@@ -53,30 +53,35 @@ class Contact extends React.Component {
               <span>Etiam a mi quis arcu varius condimentum.</span>
             </div>
             <form class="btn-center" onSubmit={this.handleClick}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={this.state.name}
-                onChange={this.handleChange}
-              />
-              <input
-                type="text"
-                name="address"
-                placeholder="Address"
-                value={this.state.address}
-                onChange={this.handleChange}
-              />
-              <input
-                type="text"
-                name="character"
-                placeholder="Character"
-                value={this.state.character}
-                onChange={this.handleChange}
-              />
-              <button type="submit" class="btn btn--white">
-                Submit
-              </button>
+              <div class="contactInfo">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
+                <input
+                  type="text"
+                  name="character"
+                  placeholder="Character"
+                  value={this.state.character}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div class="messageInfo">
+                <textarea />
+                <button type="submit" class="btn btn--white">
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
