@@ -87,20 +87,20 @@ class Contact extends React.Component {
         </div>
         <div class="flex__container">
           <div class="gridTable">
-            <span>
-              <strong>1</strong>
-            </span>
-            <span>
-              <strong>2</strong>
-            </span>
-            <span>
-              <strong>3</strong>
-            </span>
+            <div class="tableEntries">
+              <strong>Name</strong>
+            </div>
+            <div class="tableEntries">
+              <strong>Email</strong>
+            </div>
+            <div class="tableEntries">
+              <strong>Character</strong>
+            </div>
             {this.state.tableList.map(entry => (
               <>
-                <span>{entry.name}</span>
-                <span>{entry.address}</span>
-                <span>{entry.character}</span>
+                <div class="tableEntries">{entry.name}</div>
+                <div class="tableEntries">{entry.email}</div>
+                <div class="tableEntries">{entry.character}</div>
               </>
             ))}
           </div>

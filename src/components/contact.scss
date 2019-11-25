@@ -17,14 +17,12 @@
 .gridTable{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 100px;
 }
 
 .flex__container{
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 200px;
 }
 
 .contactSubtext{
@@ -65,4 +63,10 @@
 .messageInfo{
   display: flex;
   flex-direction: column;
+}
+
+.tableEntries{
+  width: 150px;
+  height: fit-content;
+  border: 1px solid black;
 }
