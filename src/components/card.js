@@ -39,9 +39,15 @@ class Card extends React.Component {
             })}
           </div>
           <div class={this.state.buttonWrapper}>
-            <button class={" btn " + this.state.buttonColor}>
-              {this.state.buttonText}
-            </button>
+            {this.props.hidden ? (
+              <button class={"cardButton--hidden"}>
+                {this.state.buttonText}
+              </button>
+            ) : (
+              <button class={"btn " + this.state.buttonColor}>
+                {this.state.buttonText}
+              </button>
+            )}
           </div>
         </div>
       </div>
