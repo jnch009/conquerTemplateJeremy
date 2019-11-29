@@ -26,17 +26,17 @@ class Card extends React.Component {
         <div class="bootstrapText">
           <div class="cardContents">
             <h2 class={"title " + this.state.titleStyle}>{this.state.title}</h2>
-            {this.state.body.split("<br>").map(function(item, key) {
-              if (key > 0) {
-                return (
+            {this.state.body
+              .split("<br>")
+              .map((item, key) =>
+                key > 0 ? (
                   <span class="bootstrapBody bootstrapBody--lineBreak">
                     {item}
                   </span>
-                );
-              } else {
-                return <span class="bootstrapBody">{item}</span>;
-              }
-            })}
+                ) : (
+                  <span class="bootstrapBody">{item}</span>
+                )
+              )}
           </div>
           <div class={this.state.buttonWrapper}>
             {this.props.hidden ? (
