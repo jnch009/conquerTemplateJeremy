@@ -28,7 +28,7 @@ function Services() {
             velit. Sed convallis at risus ullamcorper auctor. Praesent quis
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
-          imgLink="4-1.jpg"
+          imgLink="/images/4-1.jpg"
           cardColor="green"
           buttonWrapper="cardButton--hidden"
         />
@@ -41,7 +41,7 @@ function Services() {
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
           buttonText="Read It"
-          imgLink="4-2.jpg"
+          imgLink="/images/4-2.jpg"
           buttonClass="topRowButtons"
           cardColor="btn--white"
         />
@@ -54,7 +54,7 @@ function Services() {
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
           buttonText="Button Green"
-          imgLink="4-3.jpg"
+          imgLink="/images/4-3.jpg"
           buttonClass="topRowButtons"
           cardColor="green"
           buttonWrapper="cardButton--hidden"
@@ -68,7 +68,7 @@ function Services() {
             velit neque. Quisque semper porta nisi vitae suscipit. Duis
             lectus magna, ornare ac scelerisque."
           buttonText="Details"
-          imgLink="4-4.jpg"
+          imgLink="/images/4-4.jpg"
           buttonClass="topRowButtons"
           cardColor="btn--white"
         />
@@ -82,7 +82,7 @@ function Services() {
           <br>
           Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi."
           buttonText="Read More"
-          imgLink="4-5.jpg"
+          imgLink="/images/4-5.jpg"
           buttonWrapper="btn__services--leftjustify"
           cardColor="btn--white"
         />

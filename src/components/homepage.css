@@ -1,6 +1,6 @@
 #homepage {
   height: 600px;
-  background-image: url(bg-1.jpg);
+  background-image: url("../assets/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

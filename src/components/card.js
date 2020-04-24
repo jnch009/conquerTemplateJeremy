@@ -15,14 +15,14 @@ class Card extends React.Component {
       imgLink: this.props.imgLink,
       buttonClass: this.props.buttonClass,
       buttonColor: this.props.cardColor,
-      buttonWrapper: this.props.buttonWrapper
+      buttonWrapper: this.props.buttonWrapper,
     };
   }
 
   render() {
     return (
       <div class={this.props.cardStyle}>
-        <img src={this.state.imgLink} alt="1" />
+        <img src={this.props.imgLink} alt="1" />
         <div class="bootstrapText">
           <div class="cardContents">
             <h2 class={"title " + this.state.titleStyle}>{this.state.title}</h2>
