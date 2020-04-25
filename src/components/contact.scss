@@ -1,49 +1,53 @@
-.contactBody{
+#contact {
+  padding-top: 0.5vh;
+}
+
+.contactBody {
   display: flex;
   justify-content: center;
   flex-direction: column;
 
-  > h2{
+  > h2 {
     text-align: center;
   }
 }
 
-.btn-center{
+.btn-center {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.gridTable{
+.gridTable {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.flex__container{
+.flex__container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.contactSubtext{
-    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
-    border-radius: 5px;
-    color: #000;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
+.contactSubtext {
+  background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactSubtext {
-  > span{
+  > span {
     text-align: center;
     line-height: 1.6em;
-  };
+  }
 }
 
-.contactInfo{
+.contactInfo {
   display: flex;
   flex-direction: column;
   > input {
@@ -55,17 +59,17 @@
     padding: 5px 2px;
     padding-right: 50px;
   }
-  > input::placeholder{
+  > input::placeholder {
     color: black;
   }
 }
 
-.messageInfo{
+.messageInfo {
   display: flex;
   flex-direction: column;
 }
 
-.tableEntries{
+.tableEntries {
   width: 150px;
   height: fit-content;
   border: 1px solid black;

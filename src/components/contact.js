@@ -17,9 +17,9 @@ class Contact extends React.Component {
     this.setState({ character: "" });
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -28,7 +28,7 @@ class Contact extends React.Component {
     const jsonTableEntry = {
       name: this.state.name,
       email: this.state.email,
-      character: this.state.character
+      character: this.state.character,
     };
 
     this.setState({ tableList: [...this.state.tableList, jsonTableEntry] });
@@ -96,7 +96,7 @@ class Contact extends React.Component {
             <div class="tableEntries">
               <strong>Character</strong>
             </div>
-            {this.state.tableList.map(entry => (
+            {this.state.tableList.map((entry) => (
               <>
                 <div class="tableEntries">{entry.name}</div>
                 <div class="tableEntries">{entry.email}</div>

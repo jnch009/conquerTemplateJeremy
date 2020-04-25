@@ -17,25 +17,27 @@ class Navbar extends React.Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
-  handleScroll = e => {
-    let navbarHeight = 73;
+  handleScroll = (e) => {
     let windowScroll = e.target.documentElement.scrollTop;
-    let homeHeight = e.target.getElementById("homepage").clientHeight;
-    let aboutHeight = e.target.getElementById("about").clientHeight;
+    let heights = ["#homepage", "#about", "#services", "#contact"];
+    heights = heights.map((h) => {
+      const query = e.target.querySelector(h);
+      const paddingTop = getComputedStyle(query).paddingTop;
+      let newHeight =
+        query.offsetTop -
+        Number(paddingTop.substring(0, paddingTop.length - 2));
+      return newHeight;
+    });
 
-    if (windowScroll + navbarHeight < homeHeight) {
-      // home page selected
-      this.setState({ active: 0 });
-    } else if (windowScroll - homeHeight + navbarHeight < aboutHeight) {
-      // about page selected
-      this.setState({ active: 1 });
-    } else {
-      // services selected
-      this.setState({ active: 2 });
+    for (let i = heights.length - 1; i >= 0; i--) {
+      if (windowScroll >= heights[i]) {
+        this.setState({ active: i });
+        break;
+      }
     }
   };
 
-  handleClick = index => {
+  handleClick = (index) => {
     this.setState({ active: index });
   };
 
@@ -45,32 +47,32 @@ class Navbar extends React.Component {
         title: "Homepage",
         href: "#homepage",
         index: 0,
-        selected: this.state.active === 0
+        selected: this.state.active === 0,
       },
       {
         title: "About Us",
         href: "#about",
         index: 1,
-        selected: this.state.active === 1
+        selected: this.state.active === 1,
       },
       {
         title: "Services",
         href: "#services",
         index: 2,
-        selected: this.state.active === 2
+        selected: this.state.active === 2,
       },
       {
         title: "Contact",
         href: "#contact",
         index: 3,
-        selected: this.state.active === 3
+        selected: this.state.active === 3,
       },
       {
         title: "External",
         href: "#external",
         index: 4,
-        selected: this.state.active === 4
-      }
+        selected: this.state.active === 4,
+      },
     ];
 
     let classRender;
@@ -85,9 +87,25 @@ class Navbar extends React.Component {
     return (
       <ul class={classRender}>
         <div class={this.props.showNav ? "hamburgerNavbar" : "navbar"}>
-          {this.props.showNav
-            ? links.map(e => (
-                <li class="hamburgerListItem" onClick={this.props.onClick}>
+          {links.map((e) => (
+            <li>
+              <Navlink
+                key={e.title}
+                title={e.title}
+                href={e.href}
+                index={e.index}
+                selected={e.selected}
+                onClick={this.handleClick}
+              />
+            </li>
+          ))}
+          {/* {this.props.showNav
+            ? links.map((e) => (
+                <li
+                  key={e.title}
+                  class="hamburgerListItem"
+                  onClick={this.props.onClick}
+                >
                   <Navlink
                     title={e.title}
                     href={e.href}
@@ -98,9 +116,10 @@ class Navbar extends React.Component {
                   />
                 </li>
               ))
-            : links.map(e => (
+            : links.map((e) => (
                 <li>
                   <Navlink
+                    key={e.title}
                     title={e.title}
                     href={e.href}
                     index={e.index}
@@ -109,7 +128,7 @@ class Navbar extends React.Component {
                   />
                 </li>
               ))}
-          }};
+          }}; */}
         </div>
       </ul>
     );
